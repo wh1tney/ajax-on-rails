@@ -1,10 +1,6 @@
-<h1>Login, sucka.</h1>
-<div>
-  <%= form_for :user do |f| %>
-    <%= f.label :username %>
-    <%= f.text_field :username %>
-    <%= f.label :password %>
-    <%= f.password_field :password %>
-    <%= f.submit %>
-  <% end %>
+<h1>Good day.</h1>
+<ul>
+  <li><%= link_to "Log In", users_path, remote: true %></li>
+  <li><%= link_to "Sign Up", new_user_path, remote: true %></li>
+</ul>
 </div>
