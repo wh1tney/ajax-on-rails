@@ -1,6 +1,17 @@
 <h1>Good day.</h1>
-<ul>
-  <li><%= link_to "Log In", users_path, remote: true %></li>
-  <li><%= link_to "Sign Up", new_user_path, remote: true %></li>
-</ul>
+
+<div id="login">
+  <%= link_to users_path, remote: true do %>
+    <button class="btn btn-default">Sign In</button>
+  <% end %>
+
+  <div id="login_form" style="display:none;"></div>
+</div>
+
+<div id="signup">
+  <%= link_to new_user_path, remote: true do %>
+    <button>Sign Up</button>
+  <% end %>
+
+  <div id="signup_form" style="display:none;"></div>
 </div>
